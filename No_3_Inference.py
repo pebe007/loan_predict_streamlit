@@ -41,7 +41,7 @@ def main():
     loan_intent = st.selectbox("loan_intent", list(loan.keys()))
     loan_int_rate = st.number_input("loan_int_rate", min_value=0.0, max_value=100.0, value=12.5)
     loan_percent_income = st.number_input("loan_percent_income", min_value=0.0, max_value=1.0, value=0.2)
-    cb_person_cred_hist_length = st.number_input("cb_person_cred_hist_length", min_value=0, value=5.0)
+    cb_person_cred_hist_length = st.number_input("cb_person_cred_hist_length", min_value=0.0, value=5.0)
     credit_score = st.number_input("credit_score", min_value=0, max_value=850, value=650)
     previous_loan_defaults_on_file = st.selectbox("previous_loan_defaults_on_file", list(previous_loan.keys()))
 
